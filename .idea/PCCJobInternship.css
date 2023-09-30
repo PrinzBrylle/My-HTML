@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/peak.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h2{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+
+}
+
+/*---OBJECTIVE!---*/
+.objective{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.objective-col{
+    flex-basis: 45%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.objective-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---Services---*/
+.Services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.services-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.services-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.services-col p{
+    padding: 0;
+}
+.services-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/*---TEAM---*/
+.team {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  /*---CONTACTS---*/
+  .contacts{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .footer:h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .icons .fa{
+    color: #777;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+
+
+/*------ABOUT-----*/
+.sub-header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/grad.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/*----EVENTS----*/
+/* Styling the three events section */
+.Vents{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30%;
+}
+section .events {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: rgba(45, 3, 100, 0.5);
+    float: center;
+    box-sizing: border-box;
+    margin-bottom: 50%;
+}
+
+/* Styling the links of the events section */
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Styling the lists of the event section */
+section .events ul li {
+    list-style: none;
+    background: green;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+
+/* Styling the time class of events section */
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+/* Styling the hover effect of events section */
+section .events ul li:hover .time {
+    background:#C7AD7F;
+}
+
+/* Styling the header of time class of events section */
+section .events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+
+/* Styling the texts of time class of events section */
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+
+/* Styling the details class of events section */
+section .events ul li .details {
+    padding: 20px;
+    background: rgb(226, 226, 226);
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+/* Styling the header of the details class of events section */
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+/* Styling the lists of details class of events section */
+section .events ul li .details p {
+    position: relative;
+    margin: 7px 0 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+/* Styling the links of details class of events section */
+section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid black;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* Styling the details class's hover effect */
+section .events ul li .details a:hover {
+    background: #CC9767;
+    color: #fff;
+    border-color: black;
+}
+
+
